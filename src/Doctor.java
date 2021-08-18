@@ -1,12 +1,14 @@
 import javax.print.Doc;
 
 public class Doctor {
-    int id;
+    //Atributos
+    static int id = 0;
     String name;
     String speciality;
 
     Doctor(){
         System.out.println("Construyendo Objeto Doctor");
+        id++;
     }
 
     Doctor(String name){
@@ -17,6 +19,9 @@ public class Doctor {
     public void showName() {
         System.out.println(name);
 
+    }
+    public void showId(){
+        System.out.println("ID Doctor: " + id);
     }
 
 }
